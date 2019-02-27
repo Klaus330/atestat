@@ -8,12 +8,14 @@
                     <div class="message_title">
                         <!-- Section Heading Start -->
                         <div class="section_heading">
+                            <p>Contact</p>
                             <h3>Lasa un mesaj</h3>
                         </div>
                     </div>
 
                     <div class="contact_from">
-                        <form action="mail.php" method="post" id="main_contact_form">
+                        <form action="/contact" method="post" id="main_contact_form">
+                            @csrf
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div id="success_fail_info"></div>

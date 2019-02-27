@@ -2047,9 +2047,7 @@
         transform: scale(1.1);
     }
     
-    .gallery_area .single_gallery_item > a {
-        cursor: url(img/core-img/add.png), auto;
-    }
+    
     
     .gallery_area .single_gallery_item .hover_overlay {
         background-color: rgba(255, 255, 255, 0.85);

@@ -26,12 +26,14 @@ $(function () {
                 $(formMessages).addClass('success');
 
                 // Set the message text.
-                $(formMessages).text('Thanks! Message has been sent.');
+                $(formMessages).text('Multumesc! Mesajul a fost trimis.');
 
                 // Clear the form.
                 $('#name').val('');
                 $('#email').val('');
                 $('#message').val('');
+                $('#subject').val('');
+                $('#number').val('');
             })
             .fail(function (data) {
                 // Make sure that the formMessages div has the 'error' class.

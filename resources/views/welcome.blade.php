@@ -11,14 +11,17 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
          <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     </head>
     <body>
     <div id="app">
+        {{-- <color-picker></color-picker> --}}
         {{-- <color-changer></color-changer> --}}
-        <image-prediction width="640" height="480"></image-prediction>
+        {{-- <pong width="600" height="400"></pong> --}}
+        {{-- <image-prediction width="640" height="480"></image-prediction> --}}
         {{-- <webcam-recognizer width="640" height="480"></webcam-recognizer> --}}
-        {{-- <web-game width="640" height="480"></web-game> --}}
+        <web-game width="640" height="480"></web-game>
         {{-- <example-component></example-component> --}}
     </div>
 

@@ -13,7 +13,7 @@
     <title>Machine learning - Claudiu  Popa</title>
 
     <!-- Favicon  -->
-    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="shortcut icon" href="/img/logo.png">
 
     <!-- >>>>>>>>>>>>>>>> All CSS Files <<<<<<<<<<<<<<<< -->
     <link rel="stylesheet" type="text/css" href="/css/app.css">

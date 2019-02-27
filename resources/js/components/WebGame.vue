@@ -1,10 +1,7 @@
 <template>
-     <div>
-        <div style="background:black; width: 960px; height: 400px;">
-            <div style="padding: 10px; position: relative; top:100px; left: 100px; width:10px; height: 10px; background: white;" ref="box"></div>
-        </div>
+     <div>        
         <div>
-            <video ref="video" id="video" :width="width" :height="height" autoplay @click="guess" style="transform: scale(-1,1);"></video>
+            <video ref="video" id="video" :width="width" :height="height" autoplay @click="start" style="transform: scale(-1,1);"></video>
         </div>
         <h3>{{direction}}</h3>
         <button @click="leftKeyPressed">Left</button>
@@ -32,6 +29,7 @@
                 box:{},
                 speed:10,
                 clip:'',
+                startGame:false,
                 features: '',
                 direction:'Need training data',
                 knn:null,
@@ -41,9 +39,7 @@
         },
 
         mounted() {
-            // tf.disableDeprecationWarnings();
-            this.box = this.$refs.box;
-            this.speed = parseInt(this.box.style.left);
+            tf.disableDeprecationWarnings();
              this.video = this.$refs.video;
             if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
@@ -77,6 +73,11 @@
                 this.knn.load("/json/model.json",this.guess);
             },
 
+            start(){
+                this.startGame = true;
+                this.guess();
+            },
+
             guess(){
                 this.knn.classify(this.features.infer(this.video), this.gotResult);
             },            
@@ -87,34 +88,33 @@
                 else
                 {
                     this.direction = results.label;
-                    this.move(this.direction);
-                    setTimeout(()=>{this.guess()},1);
+                    console.log(results);
+                    setTimeout(()=>{this.guess()},500);
                 }
                 
             },
 
-            move(direction){
-                if(direction == "left"){    
-                    this.speed -= 10;
-                    if(this.speed >= 0 )
-                     { 
-                        console.log(this.speed);
-                        this.box.style.left = this.speed+'px';
-                     }else{
-                        this.speed = 0;
-                     }
-                }else if(direction == "right"){
+            // move(direction){
+            //     if(direction == "left"){    
+            //         this.speed -= 10;
+            //         if(this.speed >= 0 )
+            //          { 
+            //             console.log(this.speed);
+            //             this.box.style.left = this.speed+'px';
+            //          }else{
+            //             this.speed = 0;
+            //          }
+            //     }else if(direction == "right"){
                     
-                    this.speed += 10;
-                    if(this.speed <= (this.width-40))
-                    {
-                        console.log(this.speed);
-                        this.box.style.left = this.speed+'px';
-                    }else{
-                        this.speed = this.width-40;
-                     }
-                }
-            }
+            //         this.speed += 10;
+            //         if(this.speed <= (this.width-40))
+            //         {
+            //             this.box.style.left = this.speed+'px';
+            //         }else{
+            //             this.speed = this.width-40;
+            //          }
+            //     }
+            // }
 
         }
     }

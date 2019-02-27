@@ -23,7 +23,9 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('web-game', require('./components/WebGame.vue').default);
-Vue.component('color-picker', require('./components/ColorChanger.vue').default);
+Vue.component('pong', require('./components/Pong.vue').default);
+Vue.component('color-changer', require('./components/ColorChanger.vue').default);
+Vue.component('color-picker', require('./components/ColorPicker.vue').default);
 Vue.component('image-prediction', require('./components/ImagePrediction.vue').default);
 Vue.component('webcam-recognizer', require('./components/WebcamRecognizer.vue').default);
 

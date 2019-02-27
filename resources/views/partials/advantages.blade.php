@@ -10,7 +10,6 @@
                             <!-- Section Heading Start -->
                             <div class="section_heading">
                                 <p>avantaje si dezavantaze</p>
-                                {{-- <h3>Core Features</h3> --}}
                             </div>
                             <!-- Section Heading End -->
                         </div>

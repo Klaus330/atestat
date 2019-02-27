@@ -1,4 +1,3 @@
-
 <!-- >>>>>>>>>>>>>>>>>> Welcome Area Start <<<<<<<<<<<<<<<< -->
 <section class="welcome_area static_version" id="home">
     <!-- Single Slide Start -->
