@@ -1,14 +1,19 @@
 <template>
-     <div>        
-        <div>
-            <video ref="video" id="video" :width="width" :height="height" autoplay @click="start" style="transform: scale(-1,1);"></video>
+     <div class="row">
+        <div style="height: 480px; background: black;" :width="width" class="col-md-6">
+            <div class="box1" ref="box"></div>
         </div>
-        <h3>{{direction}}</h3>
-        <button @click="leftKeyPressed">Left</button>
-        <button @click="rightKeyPressed">Right</button>
-        <button @click="saveData">Save data</button>
-        <button @click="loadData">Load data</button>
-        <vue-p5 v-on="{setup}"></vue-p5>
+        <div class="col-md-6">
+            <div>
+                <video ref="video" id="video" :width="width" :height="height" autoplay @click="guess" style="transform: scale(-1,1);"></video>
+            </div>
+            <h3>{{direction}}</h3>
+            <button @click="leftKeyPressed" class="btn btn-md btn-primary">Left</button>
+            <button @click="rightKeyPressed" class="btn btn-md btn-primary">Right</button>
+            <button @click="saveData" class="btn btn-md btn-primary">Save data</button>
+            <button @click="loadData" class="btn btn-md btn-primary">Load data</button>
+            <vue-p5 v-on="{setup}"></vue-p5>
+        </div>
         </div>
 </template>
 
@@ -28,18 +33,16 @@
                 video: {},
                 box:{},
                 speed:10,
-                clip:'',
-                startGame:false,
                 features: '',
                 direction:'Need training data',
                 knn:null,
-                logits: null,
-                sketch:null
+                context: null,
+                canvas: null,
             };
         },
 
         mounted() {
-            tf.disableDeprecationWarnings();
+            // tf.disableDeprecationWarnings();
              this.video = this.$refs.video;
             if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
@@ -50,13 +53,16 @@
         },
 
         methods: {
+
             setup(){
                 this.features = ml5.featureExtractor('MobileNet');
                 this.knn = ml5.KNNClassifier();
+                this.box= this.$refs.box;
             },
 
             leftKeyPressed(){
                 console.log('left'); 
+
                 this.knn.addExample(this.features.infer(this.video), 'left');
             },
 
@@ -73,11 +79,6 @@
                 this.knn.load("/json/model.json",this.guess);
             },
 
-            start(){
-                this.startGame = true;
-                this.guess();
-            },
-
             guess(){
                 this.knn.classify(this.features.infer(this.video), this.gotResult);
             },            
@@ -88,34 +89,46 @@
                 else
                 {
                     this.direction = results.label;
-                    console.log(results);
-                    setTimeout(()=>{this.guess()},500);
+                    this.move(this.direction);
+                    setTimeout(()=>{this.guess()},100);
                 }
                 
             },
 
-            // move(direction){
-            //     if(direction == "left"){    
-            //         this.speed -= 10;
-            //         if(this.speed >= 0 )
-            //          { 
-            //             console.log(this.speed);
-            //             this.box.style.left = this.speed+'px';
-            //          }else{
-            //             this.speed = 0;
-            //          }
-            //     }else if(direction == "right"){
+            move(direction){
+                if(direction == "left"){    
+                    this.speed -= 15;
+                    if(this.speed >= 0 )
+                     { 
+                        this.box.style.left = this.speed+'px';
+                     }else{
+                        this.speed = 0;
+                     }
+                }else if(direction == "right"){
                     
-            //         this.speed += 10;
-            //         if(this.speed <= (this.width-40))
-            //         {
-            //             this.box.style.left = this.speed+'px';
-            //         }else{
-            //             this.speed = this.width-40;
-            //          }
-            //     }
-            // }
+                    this.speed += 15;
+                    if(this.speed <= (this.width-100))
+                    {
+                        this.box.style.left = this.speed+'px';
+                    }else{
+                        this.speed = this.width-40;
+                     }
+                }
+            }
 
         }
     }
 </script>
+
+
+<style>
+    .box1{
+        position: relative;
+        top: 10px;
+        left: 30px;
+        background: white;
+        z-index: 10;
+        width: 30px;
+        height: 30px;
+    }
+</style>

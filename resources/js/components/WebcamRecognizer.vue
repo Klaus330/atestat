@@ -52,7 +52,7 @@
                 {
                     this.name = results[0].className;
                     this.prob = Math.floor(results[0].probability*100);         
-                    setTimeout(()=>{this.modelReady();},1000);                    
+                    setTimeout(()=>{this.modelReady();},300);                    
                 }
             },
 

@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="footer_bottom">
-                            <p>Made with <i class="icofont icofont-heart"></i> by <a href="http:/www.pclaudiu.ro">Claudiu Popa</a></p>
+                            <p>Creat cu <i class="icofont icofont-heart"></i> de <a href="http:/www.pclaudiu.ro">Claudiu Popa</a></p>
                         </div>
                         <!-- Bottom Footer Copywrite Text Area End -->
                     </div>

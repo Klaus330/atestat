@@ -50,15 +50,10 @@
 			};
 		},
 
-		watch:{
-			startGame:function(val){
-				this.play();
-			}
-		},
-
 		mounted(){
 			this.context = this.$refs.pong.getContext("2d");
 			this.canvas = this.$refs.pong;
+			this.play();
 			this.render();
 			this.canvas.addEventListener("mousemove", this.movePaddle);
 		},

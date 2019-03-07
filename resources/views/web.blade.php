@@ -6,7 +6,7 @@
 	<section class="singl-blog-post-area section_padding_10">
 		<div class="container">
 			<div class="row">
-				<webcam-recognizer width="960" height="960"></webcam-recognizer>
+				<webcam-recognizer width="640" height="480" class="col-md-8 col-md-offset-2"></webcam-recognizer>
 			</div>
 		</div>
 	</section>

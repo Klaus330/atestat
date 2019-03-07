@@ -21,7 +21,8 @@
         {{-- <pong width="600" height="400"></pong> --}}
         {{-- <image-prediction width="640" height="480"></image-prediction> --}}
         {{-- <webcam-recognizer width="640" height="480"></webcam-recognizer> --}}
-        <web-game width="640" height="480"></web-game>
+        {{-- <web-game width="640" height="480"></web-game> --}}
+        <pong width="640" height="480"></pong>
         {{-- <example-component></example-component> --}}
     </div>
 

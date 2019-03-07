@@ -25,7 +25,7 @@
                                         <li><a href="{{Request::is("/") ? "#video" : "/#video"}}" >Video</a></li>
                                         <li><a href="{{Request::is("/") ? "#work" : "/#work"}}">Utilizari</a></li>
                                         <li><a href="{{Request::is("/") ? "#plus" : "/#plus"}}">Avantaje</a></li>
-                                        <li class="{{Request::is("examples/*") ? 'current_page_item' : ''}}"><a href="{{Request::is("/")  ? "#examples" : "/#examples"}}">Exemple</a></li>
+                                        <li class="{{Request::is("/examples/*") ? 'current_page_item' : ''}}"><a href="{{Request::is("/")  ? "#examples" : "/#examples"}}">Exemple</a></li>
                                         <li><a href="{{Request::is("/") ? "#faq" : "/#faq"}}">FAQ</a></li>
                                         <li><a href="{{Request::is("/") ? "#contact" : "/#contact"}}">Contact</a></li>
                                     </ul>

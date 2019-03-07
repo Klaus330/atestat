@@ -2,13 +2,14 @@
 
 @section('content')
 	@include('partials.header')
-	@include('partials.breadcrum',['title'=>'Pong Game example	'])
+	@include('partials.breadcrum',['title'=>'Webcam Transfer Learning'])
 	<section class="singl-blog-post-area section_padding_50">
 		<div class="container">
+			<web-game width="600" height="480"></web-game>
 			<div class="row">
-				<div class="col-md-12">
-					<web-game width="960" height="960"></web-game>
-				</div>
+				<h3>Sursa de inspiratie: <a href="https://storage.googleapis.com/tfjs-examples/webcam-transfer-learning/dist/index.html">
+					Google Creative Lab - webcam transfer learning
+				</a></h3>
 			</div>
 		</div>
 	</section>

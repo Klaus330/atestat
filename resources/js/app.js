@@ -28,6 +28,7 @@ Vue.component('color-changer', require('./components/ColorChanger.vue').default)
 Vue.component('color-picker', require('./components/ColorPicker.vue').default);
 Vue.component('image-prediction', require('./components/ImagePrediction.vue').default);
 Vue.component('webcam-recognizer', require('./components/WebcamRecognizer.vue').default);
+Vue.component('game', require('./components/Game.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
