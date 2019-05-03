@@ -9,7 +9,7 @@
                         <div class="col-xs-12">
                             <!-- Section Heading Start -->
                             <div class="section_heading">
-                                <p>avantaje si dezavantaze</p>
+                                <p>avantaje și dezavantaze</p>
                             </div>
                             <!-- Section Heading End -->
                         </div>
@@ -21,7 +21,7 @@
                                     <i class="icofont icofont-ui-check"></i>
                                 </div>
                                 <div class="single_speciality_text">
-                                    <h5>Arie ampla de utilizare/folosinta</h5>
+                                    <h5>Arie amplă de utilizare/folosință</h5>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                                     <i class="icofont icofont-ui-check"></i>
                                 </div>
                                 <div class="single_speciality_text">
-                                    <h5>Utilizeaza eficient resursele</h5>
+                                    <h5>Utilizează eficient resursele</h5>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                                     <i class="icofont icofont-close"></i>
                                 </div>
                                 <div class="single_speciality_text">
-                                    <h5>Acuratete bazata pe volumul de date inregistrat</h5>
+                                    <h5>Acuratete bazata pe volumul de date înregistrat</h5>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                                     <i class="icofont icofont-close"></i>
                                 </div>
                                 <div class="single_speciality_text">
-                                    <h5>Timp indelungat de invatare</h5>
+                                    <h5>Timp îndelungat de învatare</h5>
                                 </div>
                             </div>
                         </div>

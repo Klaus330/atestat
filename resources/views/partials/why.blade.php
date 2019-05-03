@@ -19,24 +19,24 @@
                     <div class="why_choose_us_text_area">
                         <div class="single_choose_us">
                             <h4>Servicii financiare</h4>
-                            <p>Adresate in special bancilor si companiilor multinationale.</p>
+                            <p>Adresate în special băncilor și companiilor multinaționale.</p>
                             <div class="choose_us_icon">
-                                <i class="icofont icofont-award"></i>
+                                <i class="icofont icofont-bank"></i>
                             </div>
                         </div>
                         <div class="single_choose_us">
-                            <h4>Sanatate</h4>
-                            <p>Machine learning este un trend ascendent in industria sanatatii, datorita bratarilor inteligente 
-                            care pot utiliza datele colectate de la pacient pentru a-i evalua starea de sanatate in timp real.</p>
+                            <h4>Sănătate</h4>
+                            <p>Machine learning este un trend ascendent în industria sănătății, datorită brățărilor inteligente 
+                            care pot utiliza datele colectate de la pacient pentru a-i evalua starea de sănătate în timp real.</p>
                             <div class="choose_us_icon">
-                                <i class="icofont icofont-layout"></i>
+                                <i class="icofont icofont-heart"></i>
                             </div>
                         </div>
                         <div class="single_choose_us">
                             <h4>Transport</h4>
-                            <p>Analizarea datelor si gasirea tiparelor si a trendurilor este cheiea catre industra transporturilor, ce se baseaza pe gasirea celor mai eficiente trasee si prezicerea potentialelor probleme care pot creste profitabilitatea.</p>
+                            <p>Analizarea datelor și găsirea tiparelor și a trendurilor este cheiea către industra transporturilor, ce se băsează pe găsirea celor mai eficiente trasee și prezicerea potențialelor probleme care pot crește profitabilitatea.</p>
                             <div class="choose_us_icon">
-                                <i class="icofont icofont-molecule"></i>
+                                <i class="icofont icofont-bus"></i>
                             </div>
                         </div>
                     </div>
@@ -60,24 +60,24 @@
                 <div class="col-md-5 col-md-offset-2">
                     <div class="why_choose_us_text_area second_area">
                         <div class="single_choose_us">
-                            <h4>Maketing si vanzari</h4>
-                            <p> Siteurile care ofera recomandari de produse bazate pe cautarile anterioare utilizeaza algoritmi de machine learning pentru a-ti analiza istoricul cumapraturilor -- pentru a promova alte produse care te-ar putea interesa.</p>
+                            <h4>Maketing și vanzari</h4>
+                            <p>Siteurile care oferă recomandări de produse bazate pe căutările anterioare utilizează algoritmi de machine learning pentru a-ți analiza istoricul cumaprăturilor -- pentru a promova alte produse care te-ar putea interesa.</p>
                             <div class="choose_us_icon">
                                 <i class="icofont icofont-eye-alt"></i>
                             </div>
                         </div>
                         <div class="single_choose_us">
                             <h4>Guvernul</h4>
-                            <p>Agentiile guvernamentale precum securitatea nationala au o necesitate particulara pentru machine learning inca de cand aveau multiple surse de date care necesitau a fi minate.</p>
+                            <p>Agențiile guvernamentale precum securitatea națională au o necesitate particulară pentru machine learning încă de când aveau multiple surse de date care necesitau a fi minate.</p>
                             <div class="choose_us_icon">
-                                <i class="icofont icofont-code-alt"></i>
+                                <i class="icofont icofont-user"></i>
                             </div>
                         </div>
                         <div class="single_choose_us">
                             <h4>Combustibili fosili</h4>
-                            <p>Gasirea a noi surse de energie. Analizarea minereurilor. Avertizarea posibilitati de esec a unor senzori. Numarul de utilizari al algoritmilor de machine learning este in continua crestere in aceasta industrie.</p>
+                            <p>Găsirea a noi surse de energie. Analizarea minereurilor. Avertizarea posibilități de eșec a unor senzori. Numărul de utilizări al algoritmilor de machine learning este în continuă creștere în această industrie.</p>
                             <div class="choose_us_icon">
-                                <i class="icofont icofont-responsive"></i>
+                                <i class="icofont icofont-car"></i>
                             </div>
                         </div>
                     </div>

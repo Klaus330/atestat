@@ -7,7 +7,7 @@
 		<div class="container">
 			<web-game width="600" height="480"></web-game>
 			<div class="row">
-				<h3>Sursa de inspiratie: <a href="https://storage.googleapis.com/tfjs-examples/webcam-transfer-learning/dist/index.html">
+				<h3>Sursă de inspirație: <a href="https://storage.googleapis.com/tfjs-examples/webcam-transfer-learning/dist/index.html">
 					Google Creative Lab - webcam transfer learning
 				</a></h3>
 			</div>

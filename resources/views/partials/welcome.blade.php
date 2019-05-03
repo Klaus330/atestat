@@ -5,7 +5,7 @@
         <div class="slide_text">
             <div class="table">
                 <div class="table_cell">
-                    <h2 class="font-poiret-one">"<span>Karma</span> pentru oameni este Inteligenta Artificiala"</h2>
+                    <h2 class="font-poiret-one">"<span>Karma</span>  pentru oameni este Inteligența Artificială"</h2>
                     <h3>Raghu Venkatesh</h3>
                 </div>
             </div>

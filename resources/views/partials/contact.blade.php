@@ -9,7 +9,7 @@
                         <!-- Section Heading Start -->
                         <div class="section_heading">
                             <p>Contact</p>
-                            <h3>Lasa un mesaj</h3>
+                            <h3>Lasă un mesaj</h3>
                         </div>
                     </div>
 
@@ -23,36 +23,36 @@
                                     <!-- Single Input Area Start -->
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Nume" required>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Your Subject" required>
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subiect" required>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <input type="number" class="form-control" name="number" id="number" placeholder="Your Number *" required>
+                                            <input type="number" class="form-control" name="number" id="number" placeholder="Număr de telefon" required>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-xs-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Your Message *" required></textarea>
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Mesaj" required></textarea>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-xs-12">
-                                        <button type="submit" class="btn btn-default">Send Now</button>
+                                        <button type="submit" class="btn btn-default">Trimite</button>
                                     </div>
                                 </div>
                             </div>

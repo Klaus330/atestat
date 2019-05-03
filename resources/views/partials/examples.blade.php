@@ -8,7 +8,7 @@
                 <!-- Section Heading Start -->
                 <div class="section_heading">
                     <p>Ce putem face cu Machine Learning?</p>
-                    <h3>Cateva exemple</h3>
+                    <h3>Câteva exemple</h3>
                 </div>
                 <!-- Section Heading End -->
             </div>
