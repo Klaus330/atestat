@@ -1,6 +1,6 @@
 <template>
      <div>
-        <h1>The MobileNet model labeled this video as a <i>{{name}}</i></h1>
+        <h1>Modelul MobileNet a identificat imaginea ca fiind: <i>{{name}}</i></h1>
         <video ref="video" id="video" :width="width" :height="height" autoplay></video>
         <vue-p5 v-on="{setup}" v-show="false"></vue-p5>
     </div>
@@ -54,8 +54,7 @@
                 {
                     this.name = results[0].className;
                     
-                    this.prob = Math.floor(results[0].probability*100);         
-                    // setTimeout(()=>{this.modelReady();},1000);                    
+                    this.prob = Math.floor(results[0].probability*100);
                 }
             },
 

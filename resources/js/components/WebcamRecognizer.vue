@@ -1,6 +1,6 @@
 <template>
      <div>
-        <h1>The MobileNet model labeled this video as a <i>{{name}}</i></h1>
+        <h1>Do I see a/an <i>{{name}} ?</i></h1>
         <video ref="video" id="video" :width="width" :height="height" autoplay></video>
         <vue-p5 v-on="{setup}" v-show="false"></vue-p5>
     </div>

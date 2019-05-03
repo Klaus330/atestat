@@ -1,6 +1,6 @@
 <template>
 	<div class="p5">
-		<h3>The MobileNet model labeled this image as a <i>{{name}}</i> with a confidence of <i>{{prob}}%</i></h3>
+		<h3>Modelul MobileNet a prezis ca in aceasta poza se gaseste un/o: <i>{{name}}</i> cu o confidentialitate de <i>{{prob}}%</i></h3>
 		<img :src="imagePath" :width="width" :height="height">
 		<input type="file" @change="changePrediction" class="mt-1"></input>
 		<vue-p5 v-on="{preload}"></vue-p5>

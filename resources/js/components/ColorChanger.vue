@@ -3,23 +3,23 @@
 		<div class="card-content">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="col-md-12">
-						<h6>RED</h6>
+					<div class="col-md-12" style="margin-bottom: 10px;">
+						<h6>Rosu</h6>
 						<input type="range" name="red" min="0" max="255" step="1" v-model="red" width="100%">
 					</div>
-					<div class="col-md-12">
-						<h6>GREEN</h6>
+					<div class="col-md-12" style="margin-bottom: 10px;">
+						<h6>Verde</h6>
 						<input type="range" name="red" min="0" max="255" step="1" v-model="green">
 					</div>
 					<div class="col-md-12">
-						<h6>BLUE</h6>
+						<h6>Albastru</h6>
 						<input type="range" name="red" min="0" max="255" step="1" v-model="blue">
 					</div>
 				</div>
 				<div class="col-md-6 thumbnail">
 					<!-- color box -->
 					 <div class="box z-depth-4 text-center flex justify-center items-center" v-bind:style='{backgroundColor:colorBoxVal}'>
-					 	<h1 ref="text">Example text</h1>
+					 	<h1 ref="text">Machine Learning</h1>
 					 </div>
 				</div>
 			</div>
